@@ -1,14 +1,13 @@
 ## Toy example of the output of a SOCSIM microsimulation. 
 
-
-The output population file `Data\sweden_small.opop` comes from a SOCSIM simulation using historical and projected demographic data for Sweden (1751-2100) as input.
+Use the script in the `R` directory to (1) run a SOCSIM microsimulation for Sweden an (2) read the output into R. 
+The SOCSIM simulation using historical and projected demographic data for Sweden (1751-2100) as input.
 Input age-specific mortality rates (starting from 1751) come from the Human Mortality Database and fertility rates (starting from 1891) come from the Human Fertility Database. 
 In all simulations, we assumed demographic stability for fertility in the 1751-1891 period.
 We combined these data with official demographic projections of fertility and mortality provided by Statistics Sweden.
-The simulations were implemented using the SOCSIM microsimulator and are an adaptation of an initial simulation prepared by Emilio Zagheni. 
+The simulations were implemented using the Windows implementation of the SOCSIM microsimulator written by Tom Theiele.
+They are an adaptation of an initial simulation prepared by Emilio Zagheni. 
 
-
-The main difference between `sweden_small.opop` and `sweden_big.opop` (not pushed to git given that size = 250MB) is the size of the initial (and final) populations. The small file, starts with a population of 1,200 in years 0, and the big file with 8,000 initial individuals. 
 
 ## Reading in the data
 
@@ -17,11 +16,3 @@ I wrote a function that imports the socsim output into a standard format in R. N
 Diego Alburez, 20210519
 
 MPIDR
-
-Microsimulation using Emilio's SOCSIM scripts for the 1751-2100 years.
-The simulation can be replicated using the files in this directory.
-
-RUNS in Windows!!
-
-20210610 This is a test for Tom, comparing a simulation that fails on Windows but runs on Berkeley
-
