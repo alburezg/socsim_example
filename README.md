@@ -17,3 +17,11 @@ I wrote a function that imports the socsim output into a standard format in R. N
 Diego Alburez, 20210519
 
 MPIDR
+
+Microsimulation using Emilio's SOCSIM scripts for the 1751-2100 years.
+The simulation can be replicated using the files in this directory.
+
+RUNS in Windows!!
+
+20210610 This is a test for Tom, comparing a simulation that fails on Windows but runs on Berkeley
+
